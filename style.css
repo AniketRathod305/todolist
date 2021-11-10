@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:100%;
+    background: rgb(1, 45, 126);
+}
+
+#abc{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.wrapper{
+    max-width: 400px;
+    width: 100%;
+    background: rgb(224, 238, 210);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.wrapper header{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.wrapper .inputfield{
+    display: flex;
+    height: 30px;
+    width:100%;
+    margin:20px 0
+}
+
+.inputfield input{
+    width: 85%;
+    height: 100%;
+    border:1px solid rgb(63, 62, 62);
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left:15px;
+}
+
+.inputfield button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline:none;
+    background:rgb(160, 18, 226);
+    color:#fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 4px;
+    opacity:0.6;
+    pointer-events: none;
+}
+
+.inputfield button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.list{
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.list li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #dacccc;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding:0 15px;
+    overflow: hidden;
+}
+
+.list li span{
+    position: absolute;
+    right: -45px;
+    background: red;
+    color:#fff;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    transition: all 0.3s ease;
+}
+
+.list li:hover span{
+    right:0px;
+}
+
+.wrapper .footer{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+}
+
+.footer button{
+    border: none;
+    outline:none;
+    background:rgb(160, 18, 226);
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding:10px;
+    opacity:0.6;
+    pointer-events: none;
+}
+
+.footer button.active2{
+    opacity:1;
+    pointer-events: auto;
+}
